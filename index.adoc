@@ -5,7 +5,35 @@ This chapter covers Spring's Inversion of Control (IoC) container
 
 ====
 [source,xml,indent=0]
-[subs="verbatim,quotes"]
+----
+	<?xml version="1.0" encoding="UTF-8"?>
+	<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+			http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+		<bean id="..." class="..."> <!--1--> <!--2-->
+			<!-- collaborators and configuration for this bean go here -->
+		</bean>
+
+		<bean id="..." class="...">
+			<!-- collaborators and configuration for this bean go here -->
+		</bean>
+
+		<!-- more bean definitions go here -->
+
+	</beans>
+----
+
+<1> The `id` attribute is a string that identifies the individual bean definition.
+
+<2> The `class` attribute defines the type of the bean and uses the fully qualified
+classname.
+====
+
+====
+[source,xml,indent=0]
+[subs="quotes"]
 ----
 	<?xml version="1.0" encoding="UTF-8"?>
 	<beans xmlns="http://www.springframework.org/schema/beans"
