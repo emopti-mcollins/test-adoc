@@ -1,3 +1,4 @@
+= Sample SAML XML Files
 :icons: font
 
 [source,xml]
