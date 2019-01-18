@@ -1,3 +1,5 @@
+:icons: font
+
 [source,xml]
 <tag>
  <inner value="test" /> <!--1-->
