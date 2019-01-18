@@ -1,4 +1,5 @@
 [source,xml,indent=0]
+[subs="verbatim,quotes"]
 ----
 	<?xml version="1.0" encoding="UTF-8"?>
 	<beans xmlns="http://www.springframework.org/schema/beans"
