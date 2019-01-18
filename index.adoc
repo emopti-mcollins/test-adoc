@@ -12,7 +12,7 @@ This chapter covers Spring's Inversion of Control (IoC) container
 		xsi:schemaLocation="http://www.springframework.org/schema/beans
 			http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-		<bean id="..." class="..."> <!--1--> <!--2-->
+		<bean id="..." class="..."> <1> <2>
 			<!-- collaborators and configuration for this bean go here -->
 		</bean>
 
