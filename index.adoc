@@ -3,7 +3,7 @@
 
 This chapter covers Spring's Inversion of Control (IoC) container
 
-====
+
 [source,xml,indent=0]
 ----
 	<?xml version="1.0" encoding="UTF-8"?>
@@ -29,7 +29,7 @@ This chapter covers Spring's Inversion of Control (IoC) container
 
 <2> The `class` attribute defines the type of the bean and uses the fully qualified
 classname.
-====
+
 
 ====
 [source,xml,indent=0]
