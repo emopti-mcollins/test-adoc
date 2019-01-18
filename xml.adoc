@@ -2,8 +2,19 @@
 :icons: font
 
 [source,xml]
+----
 <tag>
  <inner value="test" /> <!--1-->
 </tag>
-
+----
 <1> This is a test
+
+[source,java]
+----
+import java.format;
+
+public class Test {
+  private String me; <1>
+}
+----
+<1> Test
