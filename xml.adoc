@@ -2,6 +2,7 @@
 :icons: font
 
 [source,xml]
+[subs="verbatim,quotes"]
 ----
 <tag>
  <inner value="test" /> <!--1-->
@@ -10,6 +11,7 @@
 <1> This is a test
 
 [source,java]
+[subs="verbatim,quotes"]
 ----
 import java.format;
 
