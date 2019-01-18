@@ -1,6 +1,6 @@
 [source,xml]
 <tag>
- <inner value="test" /> <!--1-->
+ <inner value="test" /> <1>
 </tag>
 
 <1> This is a test
