@@ -1,5 +1,10 @@
-[source,xml,indent=0]
+:conum-guard-xml: //
+ifndef::icons[:conum-guard-xml: // //]
+:icons: font
+
+[source,xml,indent=0,subs=attributes+]
 ----
+<
 	<?xml version="1.0" encoding="UTF-8"?>
 	<beans xmlns="http://www.springframework.org/schema/beans"
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -17,6 +22,31 @@
 		<!-- more bean definitions go here -->
 
 	</beans>
+----
+
+<1> The `id` attribute is a string that identifies the individual bean definition.
+
+<2> The `class` attribute defines the type of the bean and uses the fully qualified
+classname.
+
+[source,xml]
+----
+<?xml version="1.0" encoding="UTF-8"?><md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://portal.sso.us-east-1.amazonaws.com/saml/assertion/MzM0NDM3MjcxMjQzX2lucy02MmIxZTg2YjVhMWNmYzRl">
+  <md:IDPSSODescriptor WantAuthnRequestsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:KeyDescriptor use="signing"> <1>
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#"> <2>
+        <ds:X509Data>
+          <ds:X509Certificate>MIIDAzCCAeugAwIBAgIBATANBgkqhkiG9w0BAQsFADBFMRYwFAYDVQQDDA1hbWF6b25hd3MuY29tMQ0wCwYDVQQLDARJREFTMQ8wDQYDVQQKDAZBbWF6b24xCzAJBgNVBAYTAlVTMB4XDTE5MDExMTE3NTA1NloXDTI0MDExMTE3NTA1NlowRTEWMBQGA1UEAwwNYW1hem9uYXdzLmNvbTENMAsGA1UECwwESURBUzEPMA0GA1UECgwGQW1hem9uMQswCQYDVQQGEwJVUzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKx1IsvnrhJM0p7aHuLCbGskZgGt/twJU9fj8JS7AIYS4P9yaw/fgye6JdNSAGRPDpY02OHYzs+IHQNV0b1u5tPHQ++mK365GglhMQ6zmbQod076cyp7Tt3WH20RvdTrzR4GKnd3wk5XxJ7lBQmrJwHPkLfZT//g9ToZnqal5DYCdrFPXonagBSXrKEIRlmKskAUZLGShwxu9t+Jstp2ox3Pssy3nDdoUGZxlvcB9v4zbnCnP6PFOJtxlS++1ADRferLLa9jyjo3XRsOcrvrnXx7NFMhbORcr7a/faXeBQ7/wxomqOUlOWPh5dYbqf0/nT8GhmOh2ADCLa05EEixs58CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEALr4UAbKJoJB1M2irFCB7EwECJ3wX77xuWufTqWbwqZ2MGPA/fN/ksDW7aGK7Ri9f6G7boWpeF4iI32dIC2Sw7eOccXk90GCuEgeqVTkt3yfuZhZtv9xtZZEDP8/uYLZwzDkVFBOUzLHf/dL5HkNAGddwoaI5xFS6hslf9T5P2DSZODHWEZvJ8YiDu3skYd1IOkExc/07nqpEVnHVw7Tx2m3DnJocDfUssBzRDgqz+pK1tUPNi8bKk+toVkuGZMz1BFP8liSQlV5gdHKmwOd2hNVQfJ0SkSpIjziNPYVcIqka9iaWv9BK4FzTd7EAt8maTV/FCVrcO0YcWmTA+uPZgg==</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://portal.sso.us-east-1.amazonaws.com/saml/logout/MzM0NDM3MjcxMjQzX2lucy02MmIxZTg2YjVhMWNmYzRl"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://portal.sso.us-east-1.amazonaws.com/saml/logout/MzM0NDM3MjcxMjQzX2lucy02MmIxZTg2YjVhMWNmYzRl"/>
+    <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
+    <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://portal.sso.us-east-1.amazonaws.com/saml/assertion/MzM0NDM3MjcxMjQzX2lucy02MmIxZTg2YjVhMWNmYzRl"/>
+    <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://portal.sso.us-east-1.amazonaws.com/saml/assertion/MzM0NDM3MjcxMjQzX2lucy02MmIxZTg2YjVhMWNmYzRl"/>
+  </md:IDPSSODescriptor>
+</md:EntityDescriptor>
 ----
 
 <1> The `id` attribute is a string that identifies the individual bean definition.
